@@ -1,0 +1,15 @@
+@server = http://localhost:4005
+@auth = Authorization: Basic alice:
+
+
+### Aluno
+# @name Aluno_POST
+POST  {{server}}/odata/v4/dados/Aluno
+Content-Type: application/json
+{{auth}}
+
+### Aluno
+# @name Aluno_GET
+GET  {{server}}/odata/v4/dados/Aluno
+Content-Type: application/json
+{{auth}}
